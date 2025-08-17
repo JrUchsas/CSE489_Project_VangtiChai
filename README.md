@@ -29,6 +29,4 @@ This project uses the following key dependencies:
     *   **Material Components:** For a modern user interface.
 *   **ViewBinding:** For type-safe access to views.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
