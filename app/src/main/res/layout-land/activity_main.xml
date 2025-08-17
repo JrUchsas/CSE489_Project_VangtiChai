@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/takaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/taka_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/initial_amount"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/takaTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/takaTextView" />
+
+    <TableLayout
+        android:id="@+id/changeTableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:stretchColumns="1,3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takaTextView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/note_500"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/note500"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="8dp"
+                android:text="@string/initial_note_count"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="@string/note_10"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/note10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:text="@string/initial_note_count"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/note_100"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/note100"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="8dp"
+                android:text="@string/initial_note_count"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="@string/note_5"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/note5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:text="@string/initial_note_count"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/note_50"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/note50"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="8dp"
+                android:text="@string/initial_note_count"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="@string/note_2"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/note2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:text="@string/initial_note_count"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/note_20"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/note20"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="8dp"
+                android:text="@string/initial_note_count"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="@string/note_1"
+                android:textSize="18sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/note1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:text="@string/initial_note_count"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <GridLayout
+        android:id="@+id/keypadGridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:columnCount="4"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/amountTextView">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="onDigitClick"
+            android:text="@string/button_1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="onDigitClick"
+            android:text="@string/button_2"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="onDigitClick"
+            android:text="@string/button_3"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="onDigitClick"
+            android:text="@string/button_4"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="onDigitClick"
+            android:text="@string/button_5"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="onDigitClick"
+            android:text="@string/button_6"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="onDigitClick"
+            android:text="@string/button_7"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="onDigitClick"
+            android:text="@string/button_8"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="onDigitClick"
+            android:text="@string/button_9"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button0"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="onDigitClick"
+            android:text="@string/button_0"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/clearButton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:onClick="onClearClick"
+            android:text="@string/button_clear"
+            android:textSize="24sp" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
