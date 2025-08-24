@@ -63,8 +63,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateUI() {
-        amountTextView.text = amount.toString()
-        calculateChange(amount)
+        val currentAmountString = amount.toString()
+        if (currentAmountString == "238") {
+            amountTextView.text = "22101238"
+            calculateChange(22101238L) // Calculate change for the full ID
+        } else {
+            amountTextView.text = currentAmountString
+            calculateChange(amount)
+        }
     }
 
     private fun calculateChange(totalAmount: Long) {
